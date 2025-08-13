@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIDADANIA</title>
+</head>
+<body> 
+    <h1>Verificar Cidadania</h1>
+    Cidadania: <input type="text" name="txtcidadania" id="txtcidadania">
+    <p>Digite sua nacionalidade</p>
+    <input type="button" value="Verificar" onclick="verificarCidadania()">
+    <div id = "res"></div>
+    <script>
+        function verificarCidadania(){
+            var txtcid = window.document.getElementById("txtcidadania");
+            var cidad = txtcid.value.toLowerCase();
+            var res = window.document.getElementById("res");
+            res.innerHTML = `<p>Sua nacionalidade é <strong>${cidad}</strong></p>`;
+            if (cidad === "brasileira"){
+                res.innerHTML += `<p>Você é cidadão brasileiro. <strong>Bem-vindo!</strong></p>`;
+            } else{
+                res.innerHTML += `<p>Você não é cidadão brasileiro. <strong>Verifique sua documentação!</strong></p>`;
+            }
+
+    }
+
+    </script>
+    
+</body>
+</html>

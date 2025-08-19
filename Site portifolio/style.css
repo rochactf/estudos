@@ -1,0 +1,245 @@
+/* Importando uma fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0a0f1f, #1a0933, #240046, #3f0071);
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* Navegação */
+header {
+    background: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7f5af0;
+}
+
+/* Hero */
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #7f5af0, #00d4ff);
+    -webkit-background-clip: text; 
+    background-clip: text;         
+    -webkit-text-fill-color: transparent;
+}
+
+#hero h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+#hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7f5af0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+#hero a:hover {
+    background: #00d4ff;
+    box-shadow: 0 0 15px #00d4ff;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #7f5af0;
+}
+
+/* Projetos */
+#projects article {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+#projects article:hover {
+    transform: translateY(-5px);
+}
+
+/* Competências */
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    list-style: none;
+    text-align: center;
+}
+
+/* Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: 500;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+form button {
+    padding: 12px;
+    background: #7f5af0;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #00d4ff;
+    box-shadow: 0 0 15px #00d4ff;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+a {
+    color: #7d5fff; 
+    text-decoration: none; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00; 
+    text-decoration: underline; 
+}
+.info-contato {
+    background-color: #2d0d47; 
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.info-contato {
+    background-color: #2d0d47; 
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px auto;
+    color: #fff;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+    max-width: 600px;  
+    text-align: center; 
+}
+
+.info-contato strong {
+    color: #a366ff; 
+}
+.links-contato {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links-contato h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.btn-link {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(90deg, #7b2ff7, #f107a3);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
